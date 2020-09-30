@@ -1,0 +1,248 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+}
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 24em;
+  transform: skewX(10deg);
+  transform-origin: bottom right;
+}
+.home {
+ height: 100vh;
+ position: relative;
+ padding-left: 2.5em;
+ display: flex;
+ align-items: center;
+}
+.myImage {
+  border-radius: 10px;
+}
+.content {
+  width: 34em;
+  margin-left: 6em;
+}
+.me {
+  color:rgb(255, 166, 0) ;
+}
+.about, .background {
+  background-color: rgb(255, 166, 0);
+  font-size: 13px;
+}
+.about{
+  border-radius: 15pc;
+}
+.navcontent{
+ position: fixed;
+ top: 12em;
+ right: 1em;
+}
+.navcontent li {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  font-size: 1em;
+  margin-bottom: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 195, 195);
+}
+a {
+  display: none;
+}
+.navcontent li:hover {
+  background-color: rgb(255, 166, 0);
+  width: 5em;
+  height:3em ;
+  border-radius: 15pc;
+}
+.navcontent li:hover  a {
+  display: initial;
+  margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .homeBody {
+    overflow: scroll;
+  }
+  .background {
+    display: none;
+   }
+   .home {
+    padding:0;
+    flex-direction: column;
+  }
+  .myImage {
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    margin-top: 5em;
+    position: relative;
+    /* left: 25%; */
+  }
+  .content{
+    margin: 0;
+  }
+  /* .navline{
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  } */
+  /* .line{
+    height: 3px;
+    width: 20px;
+    margin-top: 5px;
+    background-color: rgb(255, 166, 0);
+  } */
+  /* .content {
+    margin-top: 1.5em;
+    width: 22em;
+  } */
+  /* .navcontent li {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+  } */
+  /* a {
+    display: initial;
+  } */
+
+  /* .navcontent{
+    top: 1em;
+    background-color:rgb(255, 166, 0);
+    clip-path: circle(200px at 10% 50%);
+    transition: all 1s ease-out;
+  } */
+  /* .navconten.open {
+    clip-path: circle(1000px at 50% -50%);
+    transition: all 1s ease-out;
+  } */
+}
+
+
+ /* userPage */
+
+ /* .header {
+  position: fixed;
+  top: 0;
+   height: 4em;
+   width: 100%;
+ }
+ @media screen and (max-width: 768px) {
+   .header{
+     background-color: rgba(128, 128, 128, 0.315);
+   }
+ }   */
+ .bottomAbout {
+   position: relative;
+   font-size: 4em;
+   letter-spacing: 2px;
+ }
+ @media screen and (max-width: 768px) {
+  .bottomAbout {
+    display: none;
+  }
+ }
+ .topAbout {
+   position: absolute;
+   top: 19px;
+   font-size: 2em;
+   font-weight: 900;
+   letter-spacing: 2px;
+ }
+ .topAbout span, .border a h1{
+   color: rgb(255, 166, 0);
+ }
+ @media screen and (max-width: 768px) {
+  .topAbout {
+    position:fixed;
+    top: 0;
+    left: 2em;
+    z-index: 1;
+  }
+ }  
+ ul {
+   list-style-type: none;
+ }
+ li {
+   margin-bottom: 5px;
+ }
+ .CV {
+   background: rgb(255, 166, 0);
+   border-radius: 15pc;
+   font-size: 13px;
+ }
+ .row2 {
+  margin-left: 3em;
+}
+.border a{
+    text-decoration: none;
+}
+ .fixedNav {
+   position: fixed;
+   right: 5px;
+   top: 12em;
+ }
+ @media screen and (max-width: 768px) {
+  .fixedNav {
+    top: 0;
+    z-index: 1;
+  }
+ }
+ .bottomContact {
+  position: relative;
+  font-size: 4em;
+  letter-spacing: 2px;
+}
+.topContact {
+  position: absolute;
+  top: 19px;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.topContact span, .border a h1{
+  color: rgb(255, 166, 0);
+}
+.contactIcon {
+  color: rgb(255, 166, 0);
+}
+.social-icon {
+  border-radius: 50%;
+  margin-left: 1em;
+  background-color: rgb(241, 240, 240);
+ height: 2em ;
+ width: 2em;
+}
+.icons {
+  color: rgb(105, 104, 104);
+}
+
+.message ::-webkit-input-placeholder {
+  font-size: 10px; 
+}
+.message input, .message textarea {
+  border-radius: 18px;
+  outline: none;
+}
+.messageBtn {
+  background: rgb(255, 166, 0);
+  border-radius: 15pc;
+  font-size: 13px;
+}
+/* .navigatnbar {
+  position: fixed;
+  top: 8em;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .navigatnbar {
+    top: 0;
+    right: 5px;
+  }
+} */
